@@ -19,6 +19,9 @@ object Show {
         import q.reflect.*
 
         println("inside Show.mcrImpl")
+        val x = '{ val lib = demo.BookLibrary() }
+
+        println(x.show)
 
         // Select field by name – use '{$expr.field}.asTerm to see what tree needs to be created
         val exprTree: Term = expr.asTerm
